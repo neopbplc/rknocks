@@ -1,6 +1,6 @@
 # rknocks
 
-Uso: bash rknocks parametro
+Uso: bash rknocks combinacionesTotales
 
 Ejemplo: bash rknocks 100
 
