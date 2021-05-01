@@ -1,7 +1,7 @@
 # rknocks
 
 Uso: 
-bash rknocks <parametro>
+bash rknocks parametro
 
 Ejemplo:
 bash rknocks 100
