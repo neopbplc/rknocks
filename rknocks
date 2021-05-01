@@ -1,0 +1,47 @@
+#!/bin/bash
+#Herramienta de seguridad para generar combinaciones "Knock"
+clear
+
+echo " ____________________
+( Random Knocks v1.0 )
+ --------------------
+  o
+   o
+       ___  
+     {~._.~}
+      ( Y )
+     ()~*~()   
+     (_)-(_)   
+     
+Telegram: @neopbplc
+"
+
+min=2
+max=1000
+
+if [ $1 -ge $min ] && [ $1 -le $max ]; 
+then
+    echo "Okay, generaremos $1 combinaciones" 
+
+    echo ""
+    
+    for ((i=1; i<=(($1));i++))
+    do
+        random=$(shuf -i 0-65534 -n1)
+        
+        if (($i!=$1));
+        then
+            echo -e "$random,\c"
+        else
+            echo -e "$random\c"
+        fi
+    done
+    
+    echo ""
+
+    echo -e "\nAdiós ;)"
+
+else
+    echo "Debes ingresar un número igual o superior a $min, y menor o igual a $max."
+fi
+
